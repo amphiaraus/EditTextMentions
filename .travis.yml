@@ -9,7 +9,7 @@
 #based on https://raw.github.com/leviwilson/android-travis-ci-example/master/.travis.yml
 env: 
   matrix: 
-  - ANDROID_SDKS=android-17            ANDROID_TARGET=android-17   ANDROID_ABI=armeabi
+  - ANDROID_SDKS=android-19            ANDROID_TARGET=android-19   ANDROID_ABI=armeabi
 language: java
 before_install:
   - mvn -v
