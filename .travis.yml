@@ -1,12 +1,3 @@
-# jdk: oraclejdk7
-# notifications: 
-#   email: false
-# script: script/travis_build
-# before_install: 
-# - script/travis_before_install
-# language: java
-
-#based on https://raw.github.com/leviwilson/android-travis-ci-example/master/.travis.yml
 env: 
   matrix: 
   - ANDROID_SDKS=android-19            ANDROID_TARGET=android-19   ANDROID_ABI=armeabi
