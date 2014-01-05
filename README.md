@@ -1,6 +1,5 @@
 EditTextMentions
 ================
-![image](http://cl.ly/image/182a0Z3c2H28/mentions.png)
 EditText subclass with mentions detection ( like Facebook or Twitter )
 
 ### How to use it
@@ -50,4 +49,6 @@ This program is free software: you can redistribute it and/or modify
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+![image](http://cl.ly/image/182a0Z3c2H28/mentions.png)
 
