@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Script to run on 'script' on Travis.
+
+export ANDROID_HOME=$PWD/android-sdk-linux
+
+ant clean release

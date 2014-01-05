@@ -1,0 +1,7 @@
+jdk: oraclejdk7
+notifications: 
+  email: false
+script: script/travis_build
+before_install: 
+- script/travis_before_install
+language: java

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Script to run on 'brefore-install' on Travis.
+# Android App supports from 2.2 -> 4.2 (API8 -> API17)
+
+# Install base Android SDK
+sudo apt-get update -qq
+if [ `uname -m` = x86_64 ]; then sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch; fi
+wget http://dl.google.com/android/android-sdk_r22.3-linux.tgz
+tar xzf android-sdk_r22.3-linux.tgz
+export ANDROID_HOME=$PWD/android-sdk-linux
+export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+
+# Install required Android components.
+echo "y" | android update sdk --filter build-tools-19.0.1,platform-tools,$ANDROID_TARGET,extra-android-support,$ANDROID_SDKS --no-ui --force
+
+# Update project properties
+android update project -p . --name EditTextMentions --target $ANDROID_TARGET

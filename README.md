@@ -30,3 +30,24 @@ When you'd implemented the user selector and then detected when the user press o
 
 That overwrite the current mention text with the one selected by the user
 
+## Open Source
+Feel free to contribute with this work. I've made a simple implementation but could be improved adding new modules and interesting features. I love OPENSOURCE!
+** Contributors **
+- Pedro Piñera : @pepibumur
+
+## License - GNU GPLv3
+![image](http://www.gnu.org/graphics/gplv3-127x51.png)
+
+This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+
