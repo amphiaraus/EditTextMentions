@@ -1,6 +1,6 @@
 EditTextMentions
 ================
-
+![image](http://cl.ly/image/3x3O343s073p/mentions.png)
 EditText subclass with mentions detection ( like Facebook or Twitter )
 
 ### How to use it
