@@ -66,6 +66,14 @@ public class EditTextMentions extends android.widget.EditText implements TextWat
 		checkIfMentioning(getMentioningSequence(s, start, count));
 	}
 	
+	public void setSelectedMention(String mention){
+		try{
+			this.getText().replace(mentionStart, mentionEnd, mention+" ");
+		}catch ( IndexOutOfBoundsException exception){
+			System.out.println("Not valid start-end values for the mention");
+		}
+	}
+	
 	private void checkIfMentioning(String mentionSequence){
 		if(mentionSequence != null){
 	    	if( !selectorShown &&  mentionListener !=null){
